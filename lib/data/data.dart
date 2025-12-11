@@ -1,3 +1,7 @@
 export 'src/repository/source/api/model/base/data_response.dart';
 export 'src/repository/source/api/mapper/base/base_success_response_mapper/data_json_object_response_mapper.dart';
 export 'src/repository/source/api/mapper/base/base_success_response_mapper.dart';
+export 'src/repository/source/api/client/base/rest_api_client.dart';
+export 'src/repository/source/api/api_service.dart';
+export 'src/repository/source/api/client/base/dio_builder.dart';
+export 'src/repository/source/api/model/base/messenger_response.dart';

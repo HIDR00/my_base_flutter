@@ -17,6 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$AppState {
   bool get isLoading => throw _privateConstructorUsedError;
+  String get messenger => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AppStateCopyWith<AppState> get copyWith =>
@@ -28,7 +29,7 @@ abstract class $AppStateCopyWith<$Res> {
   factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
       _$AppStateCopyWithImpl<$Res, AppState>;
   @useResult
-  $Res call({bool isLoading});
+  $Res call({bool isLoading, String messenger});
 }
 
 /// @nodoc
@@ -45,12 +46,17 @@ class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
   @override
   $Res call({
     Object? isLoading = null,
+    Object? messenger = null,
   }) {
     return _then(_value.copyWith(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
+      messenger: null == messenger
+          ? _value.messenger
+          : messenger // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -63,7 +69,7 @@ abstract class _$$AppStateImplCopyWith<$Res>
       __$$AppStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({bool isLoading});
+  $Res call({bool isLoading, String messenger});
 }
 
 /// @nodoc
@@ -78,12 +84,17 @@ class __$$AppStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isLoading = null,
+    Object? messenger = null,
   }) {
     return _then(_$AppStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
+      messenger: null == messenger
+          ? _value.messenger
+          : messenger // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -91,15 +102,18 @@ class __$$AppStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$AppStateImpl implements _AppState {
-  const _$AppStateImpl({this.isLoading = false});
+  const _$AppStateImpl({this.isLoading = false, this.messenger = ''});
 
   @override
   @JsonKey()
   final bool isLoading;
+  @override
+  @JsonKey()
+  final String messenger;
 
   @override
   String toString() {
-    return 'AppState(isLoading: $isLoading)';
+    return 'AppState(isLoading: $isLoading, messenger: $messenger)';
   }
 
   @override
@@ -108,11 +122,13 @@ class _$AppStateImpl implements _AppState {
         (other.runtimeType == runtimeType &&
             other is _$AppStateImpl &&
             (identical(other.isLoading, isLoading) ||
-                other.isLoading == isLoading));
+                other.isLoading == isLoading) &&
+            (identical(other.messenger, messenger) ||
+                other.messenger == messenger));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, isLoading);
+  int get hashCode => Object.hash(runtimeType, isLoading, messenger);
 
   @JsonKey(ignore: true)
   @override
@@ -122,10 +138,13 @@ class _$AppStateImpl implements _AppState {
 }
 
 abstract class _AppState implements AppState {
-  const factory _AppState({final bool isLoading}) = _$AppStateImpl;
+  const factory _AppState({final bool isLoading, final String messenger}) =
+      _$AppStateImpl;
 
   @override
   bool get isLoading;
+  @override
+  String get messenger;
   @override
   @JsonKey(ignore: true)
   _$$AppStateImplCopyWith<_$AppStateImpl> get copyWith =>

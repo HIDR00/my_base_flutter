@@ -7,6 +7,7 @@ part 'app_state.freezed.dart';
 class AppState extends BaseState with _$AppState {
   
   const factory AppState({
-    @Default(false) bool isLoading
+    @Default(false) bool isLoading,
+    @Default('') String messenger
   }) = _AppState;
 }

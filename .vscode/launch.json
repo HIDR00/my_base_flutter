@@ -14,6 +14,8 @@
                 "develop",
                 "--dart-define",
                 "FLAVOR=develop",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -26,6 +28,8 @@
                 "qa",
                 "--dart-define",
                 "FLAVOR=qa",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -38,6 +42,8 @@
                 "staging",
                 "--dart-define",
                 "FLAVOR=staging",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -50,6 +56,8 @@
                 "production",
                 "--dart-define",
                 "FLAVOR=production",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -63,6 +71,8 @@
                 "develop",
                 "--dart-define",
                 "FLAVOR=develop",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -76,6 +86,8 @@
                 "qa",
                 "--dart-define",
                 "FLAVOR=qa",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -89,6 +101,8 @@
                 "staging",
                 "--dart-define",
                 "FLAVOR=staging",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -102,6 +116,8 @@
                 "production",
                 "--dart-define",
                 "FLAVOR=production",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -115,6 +131,8 @@
                 "develop",
                 "--dart-define",
                 "FLAVOR=develop",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -128,6 +146,8 @@
                 "qa",
                 "--dart-define",
                 "FLAVOR=qa",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -141,6 +161,8 @@
                 "staging",
                 "--dart-define",
                 "FLAVOR=staging",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         },
         {
@@ -154,6 +176,8 @@
                 "production",
                 "--dart-define",
                 "FLAVOR=production",
+                "--dart-define",
+                "APP_API_URL=https://huge-grizzly-renewing.ngrok-free.app"
             ]
         }
     ]

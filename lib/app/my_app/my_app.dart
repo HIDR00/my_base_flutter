@@ -121,7 +121,7 @@ class _MyHomePageState extends BasePage<MyHomePage, AppBloc> {
                   'You have pushed the button this many times:',
                 ),
                 Text(
-                  state.isLoading ? 'true' : 'false',
+                  state.messenger,
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ],
